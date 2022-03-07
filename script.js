@@ -1,3 +1,4 @@
+
 function typeWrite(elemento){
     const nomeArray = elemento.innerHTML.split("");
     elemento.innerHTML = "";
@@ -9,7 +10,7 @@ function typeWrite(elemento){
 }
 typeWrite(document.querySelector(".write"))
 
-const botao01 = document.querySelector("#info01")
+/**const botao01 = document.querySelector("#info01")
 const botao02 = document.querySelector("#info02")
 const botao03 = document.querySelector("#info03")
 
@@ -41,17 +42,16 @@ function informacao01(){
     document.querySelector("#js-porcentagem-formulario").textContent = "6.1%"
     document.querySelector(".barra-de-progresso-dentro03").style.width = "6.1%"
 
-    /**document.querySelector("#conteudo").textContent = "Formulário feito em javascript, html + css, com o foco mais na estilização e"**/
+    
 }
-/**botao01.addEventListener("click", informacao01)*/
 botao01.onclick = () => {
     if(botao02.hasClass("fa-xmark") || botao03.hasClass("fa-xmark")){
         botao02.classList.remove("fa-xmark")
         botao03.classList.remove("fa-xmark")
     }
     informacao01()
-    document.querySelector(".detalhes").classList.toggle("active")
-    botao01.classList.toggle("fa-xmark")
+    document.querySelector("#projetos .detalhes").classList.toggle("ativo")
+    document.querySelectorAll(".info").classList.toggle("fa-xmark")
     
 }
 
@@ -66,17 +66,17 @@ function informacao02(){
     document.querySelector("#js-porcentagem-formulario").textContent = "1.2%"
     document.querySelector(".barra-de-progresso-dentro03").style.width = "1.2%"
 
-    /**document.querySelector("#conteudo").textContent = "Formulário feito em javascript, html + css, com o foco mais na estilização e"**/
+    
 
 }
-/**botao02.addEventListener("click", informacao02)*/
+
 botao02.onclick = () => {
     if(botao01.hasClass("fa-xmark") || botao03.hasClass("fa-xmark")){
         botao01.classList.remove("fa-xmark")
         botao03.classList.remove("fa-xmark")
     }
     informacao02()
-    document.querySelector(".detalhes").classList.toggle("active")
+    document.querySelector("#projetos .detalhes").classList.toggle("ativo")
     botao02.classList.toggle("fa-xmark")
 }
 
@@ -92,10 +92,10 @@ function informacao03(){
     document.querySelector("#js-porcentagem-formulario").textContent = "0.7%"
     document.querySelector(".barra-de-progresso-dentro03").style.width = "0.7%"
 
-    /**document.querySelector("#conteudo").textContent = "Formulário feito em javascript, html + css, com o foco mais na estilização e"**/
+
 
 }
-/**botao03.addEventListener("onmouseover", informacao03)*/
+
 
 botao03.onclick = () => {
     if(botao02.hasClass("fa-xmark") || botao01.hasClass("fa-xmark")){
@@ -103,7 +103,7 @@ botao03.onclick = () => {
         botao01.classList.remove("fa-xmark")
     }
     informacao03()
-    document.querySelector(".detalhes").classList.toggle("active")
+    document.querySelector("#projetos .detalhes").classList.toggle("ativo")
     botao03.classList.toggle("fa-xmark")
     
-}
+}**/
